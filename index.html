@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/18e1a5f4ed.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!------------------ Home Page ---------------------------->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" alt="" class="logo" />
+
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>        
+            </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          
+          <h1>
+            Hi,I am <span> <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <h3 class="animate-charcter"> Manish Kumar Shah</h3>
+                </div>
+              </div>
+            </div></span> <br />
+          
+          </h1>
+          <h2>Web Developer <br></h2>
+          <p> 
+            I am a third year student pursuing Bachelor’s in Technology in Computer Science and Engineering . I am a self-motivated, hard-working and positive student looking for an internship in IT department as an intern to gain intensive experience in the information and technology industry . I am still learning and improving up my skills.
+          </p>
+          <a  class="btn3" href ="https://www.linkedin.com/in/manish-kumar-shah-481728118/" target="#" >Let's Connect</a>
+        </div>
+      </div>
+    </div>
+
+    <!--------------- About Page ----------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/manish.jpg" alt="" srcset="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              A self-motivated, hard-working and positive student looking for an
+              internship in IT department as an intern to gain intensive
+              experience in the information and technology industry. I seek to
+              explore my career options in the IT sector with a bachelor's
+              degree in computer science and Engineering to build my technical
+              and project management skills. Passes with 9.00 CGPA in third
+              year.
+            </p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links"onclick="opentab('experience')"></p>Experience</p>
+                <p class="tab-links" onclick="opentab('education')"></p>Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li> <span>UI/UX</span><br> Designing Web Interfaces<br></li>
+                    <li> <span>Web Development</span><br> HTML,CSS & JS<br></li>
+                    <li> <span>WordPress</span><br> Web Designing<br></li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li> <span>2022</span><br> Web Development<br></li>
+                    <li> <span>2022</span><br> Internshala Student Partner 31!<br></li>
+                    <li> <span>2021</span><br> Web Designing and Development<br></li>
+                 </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li> <span>2024</span><br> B.Tech from RGPV Bhopal<br></li>
+                    <li> <span>2020</span><br> DPS Nigahi<br></li>
+                    <li> <span>2018</span><br> SJS Waidhan<br></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------Serivices------------------- -->
+    <div id="services">
+    <div class="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-sharp fa-solid fa-crop-simple"></i>
+            <h2>Web Design</h2>
+            <p>Web design refers to the design of websites that are displayed on the internet.
+              A web designer works on the appearance, layout, and, in some cases, content of a website. Appearance, for instance, relates to the colors, font, and images used. 
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            
+            <p>Web development refers to the building, creating, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management. It is the creation of an application that works over the internet i.e. websites.</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-python"></i>
+            <h2>Python</h2>
+            <p>Python is a popular programming language. 
+              Python is an interpreted, object-oriented, high-level programming language with dynamic semantics developed by Guido van Rossum.</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+    <!-- ---------------------- Portfolio-------------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work1.jpg" alt="" class="img1" >
+            <div class="layer">
+              <h3>Web Development App</h3>
+              <p>The app connects you to the talented people around the world.
+                Download it from play store. </p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div> 
+          </div>
+          <div class="work">
+            <img src="images/work2.svg" alt="" class="img2" >
+            <div class="layer">
+              <h3>Tutor App</h3>
+              <p>The app connects you to the talented people around the world.
+                Download it from play store. </p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work3.webp" alt="" class="img3">
+            <div class="layer">
+              <h3>Photography App</h3>
+              <p>The app connects you to the talented people around the world.
+                Download it from play store. </p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+              <a href="#" class="btn">See more</a>
+      </div>
+      </div>
+    </div>
+
+
+    <!-- ------------------Contact-------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p ><i class="fa-solid fa-envelope"></i>manishkumarshah.com</p>
+            <p><i class="fa-solid fa-phone"></i>+91 7400739255</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/manishkumarshah01"target="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/manishkumarshah_/"target="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://twitter.com/Manish_Ku_Shah"target="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/in/manish-kumar-shah-481728118/" target="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/ManishKumarShah" target="#"><i class="fa-brands fa-github"></i></a>
+              <a href=""></a>
+
+            </div>
+            <a href="Manish Kumar Shah (Resume).pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required id="">
+              <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+              <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Manish 2022. Made with <i class="fa-solid fa-heart"></i> by Manish Kumar Shah
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="script1.js"></script>
+    
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxOMW0BmfKxV1QOy373_X0JnVb3vjZ7neQDJ8lh43UuikZ2HPAVg_kEbLtykiEE8XKi/exec'
+      const form = document.forms['submit-to-google-sheet']
+
+      const msg=document.getElementById("msg")
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+              msg.innerHTML =""   },5000)
+              form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  
+</body>
+</html>
